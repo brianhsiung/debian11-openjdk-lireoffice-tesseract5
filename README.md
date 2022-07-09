@@ -30,3 +30,11 @@
 ```shell
 docker build -t libreoffice-tesseract-ocr5-bullseye:openjdk-8-jre-base-v1.0 .
 ```
+
+4. 镜像只包含几款基础字体，如果需要其他字体，可单独安装，如：
+
+```dockerfile
+FROM libreoffice-tesseract-ocr5-bullseye:openjdk-8-jre-base-v1.0 .
+
+COPY myfonts /usr/share/fonts/myfonts
+```
