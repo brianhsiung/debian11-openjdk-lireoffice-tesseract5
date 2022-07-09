@@ -1,0 +1,2 @@
+# debian11-openjdk-lireoffice-tesseract5
+基于Debian11构建的含openjdk8u332，libreoffice7.2，tesseract5的基础镜像
